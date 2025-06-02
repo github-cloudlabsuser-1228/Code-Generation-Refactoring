@@ -11,5 +11,6 @@ random.shuffle(deck)
 
 # draw five cards
 print("You got:")
-for i in range(5):
+draw_count = min(5, len(deck))
+for i in range(draw_count):
     print(deck[i][0], "of", deck[i][1])
